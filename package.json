@@ -1,6 +1,6 @@
 {
   "name": "geekle-demo",
-  "private": true,
+  "private": false,
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
@@ -8,6 +8,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "geekle-vite": "^0.3.0",
     "vue": "^3.2.25"
   },
   "devDependencies": {
@@ -15,5 +16,11 @@
     "path": "^0.12.7",
     "sass": "^1.52.1",
     "vite": "^2.9.9"
-  }
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/geekle-demo.umd.js",
+  "module": "./dist/geekle-demo.es.js",
+  "css": "./dist/geekle-demo.css"
 }
